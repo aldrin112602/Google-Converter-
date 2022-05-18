@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      transition: hover 0.4s ease;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+    }
+    main {
+      padding: 20px;
+      border: 1px solid #fefefe;
+    }
+    select {
+      width: 300px;
+      height: 30px;
+      border: 1px solid #ddd;
+      background: #ffffef;
+      padding-left: 10px;
+      font-size: 10pt;
+    }
+    .opt, input {
+      width: 140px;
+    }
+    div select {
+      padding: 0;
+    }
+    input {
+      height: 30px;
+      padding-left: 10px;
+      background: #ffffef;
+      border: 1px solid #ddd;
+    }
+    select, input {
+      outline: none;
+    }
+    select:hover, input:hover {
+     border: 1px solid #aaa; 
+    }
+    
+    div {
+      padding: 10px 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <main role="main">
+    <select></select><br>
+    <div>
+      <input type="number">
+      <select class="opt"></select>
+    </div>
+    <div>
+      <input type="number">
+      <select class="opt"></select>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
